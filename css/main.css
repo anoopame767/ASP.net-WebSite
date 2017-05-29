@@ -1,0 +1,43 @@
+#displaycontent{
+width: 100%;	
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+#registerform, #displayimage{
+width: 45%;	
+margin: auto auto;
+}
+
+img{
+width: 100%;
+border: 5px solid #ff3333;
+border-radius: 15px;
+}
+
+#registerform{
+padding: 20px 30px;	
+	
+}
+
+#TextBox5{
+margin: 0 auto;	
+}
+
+#UserControls{
+		width: 75%;
+		height: 100px;
+}
+
+.thumb{
+	width: 150px;
+	height: 150px;
+	padding: 0px;
+	margin: 0 auto;
+}
+
+asp:TableRow, tr, td{
+		padding: 0px;
+		margin: 0px 0px;
+}
