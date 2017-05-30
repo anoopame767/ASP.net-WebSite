@@ -36,15 +36,15 @@
   </div>
   <div style="font-weight:bold">
     <a href="Default.aspx" class="w3-bar-item w3-button">Home</a>
-    <a href="#" class="w3-bar-item w3-button">Orders</a>
+    <a href="checkout.aspx" class="w3-bar-item w3-button">Orders</a>
     <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
       Movies <i class="fa fa-caret-down"></i>
     </a>
     <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
       <a href="Films.aspx?type=all" class="w3-bar-item w3-button">All</a>
-      <a href="actionmovies.aspx" class="w3-bar-item w3-button">Action</a>
-      <a href="comedymovies.aspx" class="w3-bar-item w3-button">Comedy</a>
-      <a href="dramamovies.aspx" class="w3-bar-item w3-button">Drama</a>
+      <a href="Films.aspx?type=action" class="w3-bar-item w3-button">Action</a>
+      <a href="Films.aspx?type=comedy" class="w3-bar-item w3-button">Comedy</a>
+      <a href="Films.aspx?type=drama" class="w3-bar-item w3-button">Drama</a>
     </div>
       <a href="profileupdate.aspx" class="w3-bar-item w3-button">Profile</a>
     <a href="logout.aspx" class="w3-bar-item w3-button">Logout</a>
@@ -78,7 +78,7 @@
       <asp:Label ID="Label1" runat="server" Text="" style="font-size:1em;"></asp:Label>
         <i class="fa fa-user-circle" aria-hidden="true"></i>
 
-      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <a href="checkout.aspx"><i class="fa fa-shopping-cart w3-margin-right"></i></a>
       <i class="fa fa-search"></i>
     </p>
 
