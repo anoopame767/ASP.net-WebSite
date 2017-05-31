@@ -48,8 +48,24 @@
         }
 
         function redirect(btn) {
-                window.location = "checkout.aspx";
+            var newmovieList = [];
+                    if (getCookie('movieId') == "") {
+                        document.cookie = "movieId=" + btn.id;
+                        alert('Purchased' + btn.id);
+                    }
+                    else {
+                        json_str = getCookie('movieId');
+                        newmovieList.push(json_str);
+                
+                        newmovieList.push(btn.id);
+                
+                        document.cookie = "movieId=" + newmovieList;
+                        alert('Created cart ' + newmovieList);
+                    }
+
+            window.location = "checkout.aspx";
         }
+
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" Runat="Server">
@@ -58,6 +74,8 @@
         <asp:Panel ID="MovieList" runat="server">
             
         </asp:Panel>
+      
+
     </div>
 </asp:Content>
 

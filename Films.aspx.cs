@@ -20,6 +20,7 @@ public partial class Default2 : System.Web.UI.Page
         String imgPath;
         Double price;
 
+
         MovieManager Mvmgr = new MovieManager();
         Movie mv = new Movie();
 
@@ -36,7 +37,7 @@ public partial class Default2 : System.Web.UI.Page
             imgPath = mv1.imagepath;
 
 
-            lt.Text += "<div class='w3-col m3' style='margin:5px 5px 5px'><div class='w3-card-4 w3-dark-grey'><div class='w3-container w3-center'><h5>" + movieName + "</h5><img src = '" + imgPath + "' alt= 'Avatar' style='width:80%'><h6>Price: " + price + "</h6><button id ='buy_" + mvId + "' onclick='redirect(this);' class='w3-button w3-green'>Buy</button><button id ='add_cart_" + mvId + "' onclick='setCart(this);' class='w3-button w3-blue'>Add To Cart</button></div></div></div>";
+            lt.Text += "<div class='w3-col m3' style='margin:5px 5px 5px'><div class='w3-card-4 w3-dark-grey'><div class='w3-container w3-center'><h5>" + movieName + "</h5><img src = '" + imgPath + "' alt= 'Avatar' style='width:80%'><h6>Price: " + price + "</h6><button id ='buy_cart_" + mvId + "' onclick='redirect(this);' class='w3-button w3-green'>Buy</button><button id ='add_cart_" + mvId + "' onclick='setCart(this);' class='w3-button w3-blue'>Add To Cart</button></div></div></div>";
             MovieList.Controls.Add(lt);
         }
 
